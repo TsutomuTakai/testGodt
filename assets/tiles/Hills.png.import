@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://mdod0p10qnpx"
-path="res://.godot/imported/Water Effect and Bullet 16x16.png-39c50f02f86acd67e2cc98dc4e95b3a2.ctex"
+uid="uid://dcxoffaak8jes"
+path="res://.godot/imported/Hills.png-796aa70509d17c33a3c2fbe9c1f3d1ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Water Effect and Bullet 16x16.png"
-dest_files=["res://.godot/imported/Water Effect and Bullet 16x16.png-39c50f02f86acd67e2cc98dc4e95b3a2.ctex"]
+source_file="res://assets/tiles/Hills.png"
+dest_files=["res://.godot/imported/Hills.png-796aa70509d17c33a3c2fbe9c1f3d1ac.ctex"]
 
 [params]
 

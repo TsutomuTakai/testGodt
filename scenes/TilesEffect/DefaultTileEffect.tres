@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="TileEffectResource" load_steps=2 format=3 uid="uid://bp5revvncwj0d"]
+
+[ext_resource type="Script" uid="uid://bpakiiy7ykdp2" path="res://scripts/effects/DefaultTileEffect.gd" id="2_alo33"]
+
+[resource]
+script = ExtResource("2_alo33")
+effect_name = "Default Effect"
+effect_type = "damage"
+effect_value = 10
+effect_duration = 1
+metadata/_custom_type_script = "uid://c5dd4u5nek5l2"

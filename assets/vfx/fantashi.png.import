@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bh4jn8qbifdii"
-path="res://.godot/imported/iso_tile_export.png-1df3605d54f99e12e4dc3cbb47f9d3bd.ctex"
+uid="uid://dausvkpgla8w4"
+path="res://.godot/imported/fantashi.png-e1a58b334839e6b2abb9cffc1c9d3cb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/iso_tile_export.png"
-dest_files=["res://.godot/imported/iso_tile_export.png-1df3605d54f99e12e4dc3cbb47f9d3bd.ctex"]
+source_file="res://assets/vfx/fantashi.png"
+dest_files=["res://.godot/imported/fantashi.png-e1a58b334839e6b2abb9cffc1c9d3cb5.ctex"]
 
 [params]
 

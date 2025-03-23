@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="TeamData" load_steps=3 format=3 uid="uid://b1aooqlmyslgx"]
+
+[ext_resource type="Script" uid="uid://cr1b2gxkbawtv" path="res://scenes/Team/TeamData.gd" id="1_yaej0"]
+[ext_resource type="PackedScene" uid="uid://yl6wmr0s3ae3" path="res://scenes/Unit/UnitTemplate.tscn" id="2_07b15"]
+
+[resource]
+script = ExtResource("1_yaej0")
+team_name = "Default Team"
+unit_scenes = Array[PackedScene]([ExtResource("2_07b15")])
+metadata/_custom_type_script = "uid://cr1b2gxkbawtv"

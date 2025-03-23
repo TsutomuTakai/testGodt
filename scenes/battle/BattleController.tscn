@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://c3c2yb0rmv0kh"]
+
+[ext_resource type="Script" uid="uid://bm075supl0tqs" path="res://scripts/battle/BattleController.gd" id="1_bj2fv"]
+[ext_resource type="PackedScene" uid="uid://cv12tum6ndp8l" path="res://scenes/battle/GridController.tscn" id="2_lfisi"]
+[ext_resource type="PackedScene" uid="uid://l4e53mmjbbcg" path="res://scenes/battle/iu_controller.tscn" id="3_v6665"]
+
+[node name="BattleController" type="Node" node_paths=PackedStringArray("grid_controller", "iu_controller")]
+script = ExtResource("1_bj2fv")
+grid_controller = NodePath("GridController")
+iu_controller = NodePath("IuController")
+
+[node name="GridController" parent="." instance=ExtResource("2_lfisi")]
+
+[node name="IuController" parent="." instance=ExtResource("3_v6665")]

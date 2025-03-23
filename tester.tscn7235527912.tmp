@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvntg3vskkbid"]
+
+[ext_resource type="PackedScene" uid="uid://cv12tum6ndp8l" path="res://scenes/Controllers/GridController.tscn" id="1_qxhol"]
+[ext_resource type="PackedScene" uid="uid://c3c2yb0rmv0kh" path="res://scenes/Controllers/BattleController.tscn" id="2_cdomt"]
+[ext_resource type="Resource" uid="uid://b1aooqlmyslgx" path="res://scenes/Team/defaultTeam.tres" id="3_7g65i"]
+
+[node name="Tester" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="BattleController" parent="." node_paths=PackedStringArray("grid_controller") instance=ExtResource("2_cdomt")]
+player_team = ExtResource("3_7g65i")
+enemy_team = ExtResource("3_7g65i")
+grid_controller = NodePath("../GridController")
+
+[node name="GridController" parent="." instance=ExtResource("1_qxhol")]
+
+[node name="Button" type="Button" parent="."]
+offset_left = -117.0
+offset_top = -87.0
+offset_right = -80.0
+offset_bottom = -56.0
+text = "AIO"
+
+[connection signal="pressed" from="Button" to="GridController" method="_on_button_pressed"]

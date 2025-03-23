@@ -1,0 +1,55 @@
+[gd_scene load_steps=7 format=3 uid="uid://bvntg3vskkbid"]
+
+[ext_resource type="Script" uid="uid://dr88ji7ogmej6" path="res://tester.gd" id="1_qxhol"]
+[ext_resource type="PackedScene" uid="uid://yl6wmr0s3ae3" path="res://scenes/Unit/UnitTemplate.tscn" id="2_cdomt"]
+[ext_resource type="Script" uid="uid://8oui03p8odja" path="res://scripts/battle/DefaultAction.gd" id="3_d5o46"]
+[ext_resource type="Resource" uid="uid://1nrdd1v1p4o" path="res://scripts/data/action_data/base_action.tres" id="5_gdr51"]
+[ext_resource type="Resource" uid="uid://tw2e3o0t3083" path="res://scripts/data/action_data/heal_action.tres" id="5_x3eih"]
+[ext_resource type="Resource" uid="uid://c8c2ll75o7jry" path="res://scripts/data/action_data/poison_action.tres" id="6_gdr51"]
+
+[node name="Tester" type="Node2D" node_paths=PackedStringArray("player", "enemy")]
+position = Vector2(-21, 18)
+script = ExtResource("1_qxhol")
+player = NodePath("Player")
+enemy = NodePath("Enemy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="SetDamage" type="Button" parent="."]
+offset_left = -167.0
+offset_top = -105.0
+offset_right = -95.0
+offset_bottom = -74.0
+text = "Damage"
+
+[node name="SetHeal" type="Button" parent="."]
+offset_left = -167.0
+offset_top = -69.0
+offset_right = -124.0
+offset_bottom = -38.0
+text = "HEal"
+
+[node name="SetPoison" type="Button" parent="."]
+offset_left = -167.0
+offset_top = -28.0
+offset_right = -124.0
+offset_bottom = 3.0
+text = "Poison"
+
+[node name="Ex" type="Button" parent="."]
+offset_left = -167.0
+offset_top = 9.0
+offset_right = -49.0
+offset_bottom = 40.0
+text = "ExecuteAction"
+
+[node name="Player" parent="." instance=ExtResource("2_cdomt")]
+position = Vector2(0, 1)
+actions = Array[ExtResource("3_d5o46")]([ExtResource("5_gdr51"), ExtResource("5_x3eih"), ExtResource("6_gdr51")])
+
+[node name="Enemy" parent="." instance=ExtResource("2_cdomt")]
+position = Vector2(48, -38)
+health = 10
+unit_type = 1
+
+[connection signal="pressed" from="SetDamage" to="." method="_on_set_damage_pressed"]

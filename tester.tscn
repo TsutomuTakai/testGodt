@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bvntg3vskkbid"]
+
+[ext_resource type="PackedScene" uid="uid://c3c2yb0rmv0kh" path="res://scenes/battle/BattleController.tscn" id="2_cdomt"]
+[ext_resource type="Resource" uid="uid://b1aooqlmyslgx" path="res://scenes/Team/defaultTeam.tres" id="3_7g65i"]
+
+[node name="Tester" type="Node2D"]
+
+[node name="BattleController" parent="." instance=ExtResource("2_cdomt")]
+player_team = ExtResource("3_7g65i")
+enemy_team = ExtResource("3_7g65i")
+
+[node name="Camera2D" type="Camera2D" parent="."]

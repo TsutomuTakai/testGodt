@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TileResource" load_steps=3 format=3 uid="uid://lqbtri1hxxyt"]
+
+[ext_resource type="Script" uid="uid://c5dd4u5nek5l2" path="res://scripts/battle/DefaultTile.gd" id="1_s0iqn"]
+[ext_resource type="Script" uid="uid://bpakiiy7ykdp2" path="res://scripts/effects/DefaultTileEffect.gd" id="2_wpxsf"]
+
+[resource]
+script = ExtResource("1_s0iqn")
+tile_name = "DANO"
+tile_atlas_pos = Vector2i(12, 4)
+id = 2
+tile_effects = Array[ExtResource("2_wpxsf")]([])
+is_walkable = true

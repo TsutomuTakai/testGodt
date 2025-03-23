@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://v1g3uhaa842i"
-path="res://.godot/imported/Purple Effect and Bullet 16x16.png-152314a042f5f73b5167f992b7263f2f.ctex"
+uid="uid://drfqc8gowmsnq"
+path="res://.godot/imported/spritesheet.png-e917d025507ab97a2bbdcc9e82518e92.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Purple Effect and Bullet 16x16.png"
-dest_files=["res://.godot/imported/Purple Effect and Bullet 16x16.png-152314a042f5f73b5167f992b7263f2f.ctex"]
+source_file="res://assets/tiles/spritesheet.png"
+dest_files=["res://.godot/imported/spritesheet.png-e917d025507ab97a2bbdcc9e82518e92.ctex"]
 
 [params]
 

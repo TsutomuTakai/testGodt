@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://cv12tum6ndp8l"]
+
+[ext_resource type="Script" uid="uid://bww3qwnbyvtlx" path="res://scenes/Controllers/GridController.gd" id="1_ufnxp"]
+[ext_resource type="Script" uid="uid://c5dd4u5nek5l2" path="res://scenes/Tiles/DefaultTile.gd" id="2_sh6o2"]
+[ext_resource type="Resource" uid="uid://cdpy5xlu53ct4" path="res://scenes/Tiles/Tile_4_2.tres" id="3_0twfg"]
+
+[node name="GridController" type="Node2D"]
+script = ExtResource("1_ufnxp")
+player_grid_width = null
+player_grid_height = null
+enemy_grid_width = null
+enemy_grid_height = null
+tile_resources = Array[ExtResource("2_sh6o2")]([ExtResource("3_0twfg")])

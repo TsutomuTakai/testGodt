@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://l4e53mmjbbcg"]
+
+[ext_resource type="Script" uid="uid://dlc33w8q3joqc" path="res://scripts/IU/iu_controller.gd" id="1_7nb5n"]
+
+[node name="IuController" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7nb5n")

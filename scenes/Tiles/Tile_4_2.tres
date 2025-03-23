@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="TileResource" load_steps=3 format=3 uid="uid://cdpy5xlu53ct4"]
+
+[ext_resource type="Script" uid="uid://c5dd4u5nek5l2" path="res://scripts/battle/DefaultTile.gd" id="1_b8cem"]
+[ext_resource type="Script" uid="uid://bpakiiy7ykdp2" path="res://scripts/effects/DefaultTileEffect.gd" id="2_gb46c"]
+
+[resource]
+script = ExtResource("1_b8cem")
+tile_name = "Default Tile"
+tile_atlas_pos = Vector2i(4, 2)
+id = 1
+tile_effects = Array[ExtResource("2_gb46c")]([])
+is_walkable = true

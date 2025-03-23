@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=5 format=3 uid="uid://tw2e3o0t3083"]
+
+[ext_resource type="Script" uid="uid://vprcbtqpmbii" path="res://scripts/effects/Effects/BaseEffect.gd" id="1_mvxpy"]
+[ext_resource type="Script" uid="uid://b0ug0s2su320w" path="res://scripts/effects/Effects/HealEffect.gd" id="2_32qyq"]
+[ext_resource type="Script" uid="uid://8oui03p8odja" path="res://scripts/battle/DefaultAction.gd" id="3_tehwi"]
+
+[sub_resource type="Resource" id="Resource_tm4wx"]
+script = ExtResource("2_32qyq")
+metadata/_custom_type_script = "uid://b0ug0s2su320w"
+
+[resource]
+script = ExtResource("3_tehwi")
+action_name = "heal"
+target_type = "any"
+effects = Array[ExtResource("1_mvxpy")]([SubResource("Resource_tm4wx")])
+animation_name = "attack"
+energy_cost = 2
+action_cost = 1
+metadata/_custom_type_script = "uid://8oui03p8odja"

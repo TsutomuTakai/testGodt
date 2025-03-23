@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="ActionResource" load_steps=5 format=3 uid="uid://cdn1qhdnlowue"]
+
+[ext_resource type="Script" uid="uid://vprcbtqpmbii" path="res://scripts/effects/Effects/BaseEffect.gd" id="1_3k426"]
+[ext_resource type="Script" uid="uid://8oui03p8odja" path="res://scripts/battle/DefaultAction.gd" id="1_qm2c2"]
+[ext_resource type="Script" uid="uid://dewc02mv8e3hp" path="res://scripts/effects/AreaOfEffect/cross.gd" id="1_v1sgs"]
+
+[sub_resource type="Resource" id="Resource_vraew"]
+script = ExtResource("1_v1sgs")
+metadata/_custom_type_script = "uid://dewc02mv8e3hp"
+
+[resource]
+script = ExtResource("1_qm2c2")
+action_name = "Attack"
+target_type = "Enemy"
+effects = Array[ExtResource("1_3k426")]([])
+animation_name = "Default"
+action_cost = 1
+action_range = 1
+action_cooldown = 0
+aoe = SubResource("Resource_vraew")
+metadata/_custom_type_script = "uid://8oui03p8odja"

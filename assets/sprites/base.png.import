@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dausvkpgla8w4"
-path="res://.godot/imported/fantashi.png-11e9e85cc0b97ef595cce0df05593e7c.ctex"
+uid="uid://ckf2xcs3rq34f"
+path="res://.godot/imported/base.png-bc3c071fe70354c1c09d3b1e33059006.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/fantashi.png"
-dest_files=["res://.godot/imported/fantashi.png-11e9e85cc0b97ef595cce0df05593e7c.ctex"]
+source_file="res://assets/sprites/base.png"
+dest_files=["res://.godot/imported/base.png-bc3c071fe70354c1c09d3b1e33059006.ctex"]
 
 [params]
 

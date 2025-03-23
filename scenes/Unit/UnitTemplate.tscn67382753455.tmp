@@ -1,0 +1,82 @@
+[gd_scene load_steps=13 format=3 uid="uid://yl6wmr0s3ae3"]
+
+[ext_resource type="Script" uid="uid://cnm4emt5yx2ie" path="res://scripts/battle/UnitTemplate.gd" id="1_auwf1"]
+[ext_resource type="Texture2D" uid="uid://ckf2xcs3rq34f" path="res://assets/sprites/base.png" id="1_ctnqk"]
+[ext_resource type="Script" uid="uid://8oui03p8odja" path="res://scripts/battle/DefaultAction.gd" id="2_bt88h"]
+[ext_resource type="Resource" uid="uid://cdn1qhdnlowue" path="res://scenes/battle/defaulltAction.tres" id="3_hlpjt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_auwf1"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(16, 24, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7kcj3"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(16, 48, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt88h"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(16, 72, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctnqk"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(80, 24, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hlpjt"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(80, 48, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0nid8"]
+atlas = ExtResource("1_ctnqk")
+region = Rect2(80, 72, 16, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hlpjt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_auwf1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7kcj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt88h")
+}],
+"loop": true,
+"name": &"idle_back",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctnqk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hlpjt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0nid8")
+}],
+"loop": true,
+"name": &"idle_front",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ctnqk"]
+radius = 8.0
+height = 22.0
+
+[node name="UnitTemplate" type="AnimatableBody2D"]
+script = ExtResource("1_auwf1")
+unit_name = null
+health = null
+actions = Array[ExtResource("2_bt88h")]([ExtResource("3_hlpjt")])
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11)
+sprite_frames = SubResource("SpriteFrames_hlpjt")
+animation = &"idle_front"
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(0, -11)
+shape = SubResource("CapsuleShape2D_ctnqk")

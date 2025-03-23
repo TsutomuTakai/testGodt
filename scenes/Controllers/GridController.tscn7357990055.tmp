@@ -1,0 +1,16 @@
+[gd_scene load_steps=6 format=3 uid="uid://cv12tum6ndp8l"]
+
+[ext_resource type="Script" uid="uid://bww3qwnbyvtlx" path="res://scenes/Controllers/GridController.gd" id="1_ufnxp"]
+[ext_resource type="Script" uid="uid://c5dd4u5nek5l2" path="res://scenes/Tiles/DefaultTile.gd" id="2_sh6o2"]
+[ext_resource type="Resource" uid="uid://cdpy5xlu53ct4" path="res://scenes/Tiles/Tile_4_2.tres" id="3_0twfg"]
+[ext_resource type="Resource" uid="uid://lqbtri1hxxyt" path="res://scenes/Tiles/Tile_damage.tres" id="4_1hllo"]
+[ext_resource type="TileSet" uid="uid://cwqtv787uw4io" path="res://scenes/Tiles/TileSet.tres" id="5_thx1h"]
+
+[node name="GridController" type="Node2D"]
+script = ExtResource("1_ufnxp")
+tile_resources = Array[ExtResource("2_sh6o2")]([ExtResource("3_0twfg"), ExtResource("4_1hllo")])
+tile_set = ExtResource("5_thx1h")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray(0, 0, 255, 255, 0, 0, 1, 0, 15, 0, 9, 0, 0, 0)
+tile_set = ExtResource("5_thx1h")
