@@ -6,6 +6,7 @@
 
 [sub_resource type="Resource" id="Resource_tm4wx"]
 script = ExtResource("2_32qyq")
+instant = false
 metadata/_custom_type_script = "uid://b0ug0s2su320w"
 
 [resource]
@@ -15,5 +16,8 @@ target_type = "any"
 effects = Array[ExtResource("1_mvxpy")]([SubResource("Resource_tm4wx")])
 animation_name = "attack"
 energy_cost = 2
-action_cost = 1
+power = 1
+range = 1
+instant = false
+repeats = 0
 metadata/_custom_type_script = "uid://8oui03p8odja"

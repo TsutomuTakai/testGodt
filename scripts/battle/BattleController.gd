@@ -173,8 +173,3 @@ func undo_action():
 		# Update UI to reflect the undone actions
 	else:
 		print("Cannot undo further.")
-
-
-func _on_set_pressed() -> void:
-	
-	pass # Replace with function body.

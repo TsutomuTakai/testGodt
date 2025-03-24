@@ -6,6 +6,7 @@
 
 [sub_resource type="Resource" id="Resource_mvp1v"]
 script = ExtResource("3_3xbwp")
+instant = false
 metadata/_custom_type_script = "uid://b4ypsr7jwymcr"
 
 [resource]
@@ -15,5 +16,8 @@ target_type = "Enemy"
 effects = Array[ExtResource("1_moh2c")]([SubResource("Resource_mvp1v")])
 animation_name = "attack"
 energy_cost = 2
-action_cost = 1
+power = 1
+range = 1
+instant = false
+repeats = 0
 metadata/_custom_type_script = "uid://8oui03p8odja"
