@@ -1,4 +1,7 @@
 # testGodt
+
+
+A
 Godot doesn't enforce a strict naming convention like some other languages, but it strongly encourages consistency and readability. Here's a recommended naming convention that aligns with Godot's style and best practices:
 
 1. Files and Folders:
