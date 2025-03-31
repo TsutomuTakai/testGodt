@@ -19,3 +19,5 @@ offset_top = -109.0
 offset_right = -132.0
 offset_bottom = -78.0
 text = "Assign"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

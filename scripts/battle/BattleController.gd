@@ -40,26 +40,27 @@ func spawn_units():
 				player_unit_instance.unit_type = player_unit_instance.UnitType.PLAYER
 				add_child(player_unit_instance)
 
-				player_unit_instance.set_grid_position(Vector2i(1,1), grid_controller)
+				player_unit_instance.set_grid_position(Vector2i(1,player_unit_index), grid_controller)
 				grid_controller.set_unit_on_tile(grid_controller.GridType.PLAYER, grid_pos.x, grid_pos.y, player_unit_instance)
-
+				player_units.append((player_unit_instance))
 				player_unit_index += 1
 				print('dex' , player_unit_index ,'pos ',grid_pos)
 				unit_dict['player']  = player_unit_instance
 	
 	if enemy_team and grid_controller:
 		var available_enemy_cells = get_available_cells(grid_controller.GridType.ENEMY) # Get available cells
+		var enemy_unit_index = 0
 		for unit_scene in enemy_team.unit_scenes:
 			if available_enemy_cells.size() > 0:
 				var random_index = randi() % available_enemy_cells.size()
 				var grid_pos = available_enemy_cells[random_index]
 				available_enemy_cells.erase(random_index) # Remove the used cell
-
+				enemy_unit_index +=1
 				var enemy_unit_instance = unit_scene.instantiate()
 				enemy_unit_instance.unit_type = enemy_unit_instance.UnitType.ENEMY
 				add_child(enemy_unit_instance)
 
-				enemy_unit_instance.set_grid_position(Vector2i(1,1), grid_controller)
+				enemy_unit_instance.set_grid_position(Vector2i(1,enemy_unit_index), grid_controller)
 				grid_controller.set_unit_on_tile(grid_controller.GridType.ENEMY, grid_pos.x, grid_pos.y, enemy_unit_instance)
 				unit_dict['enem']  = enemy_unit_instance
 				

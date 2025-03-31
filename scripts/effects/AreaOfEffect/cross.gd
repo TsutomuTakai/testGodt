@@ -1,7 +1,7 @@
 extends AoE
 class_name CircleAoE
 
-func get_affected_cells() -> Array[Vector2i]:
+func get_affected_cells(pos: Vector2i) -> Array[Vector2i]:
 	var affected_cells = []
 	for x in range(-range, range + 1):
 		for y in range(-range, range + 1):

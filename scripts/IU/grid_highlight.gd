@@ -33,3 +33,6 @@ func update_highlight():
 		highlight_sprite.position = grid_manager.to_global(grid_manager.enemy_tilemap.map_to_local(enemy_grid_pos)) + grid_manager.initial_enemy_offset
 	else:
 		highlight_sprite.visible = false
+		
+func show_target():
+	pass

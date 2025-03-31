@@ -1,8 +1,13 @@
-[gd_resource type="Resource" script_class="ActionResource" load_steps=5 format=3 uid="uid://1nrdd1v1p4o"]
+[gd_resource type="Resource" script_class="ActionResource" load_steps=7 format=3 uid="uid://1nrdd1v1p4o"]
 
 [ext_resource type="Script" uid="uid://vprcbtqpmbii" path="res://scripts/effects/Effects/BaseEffect.gd" id="1_moh2c"]
+[ext_resource type="Script" uid="uid://wmhrexuqbg3" path="res://scripts/effects/AreaOfEffect/line.gd" id="1_qkoyr"]
 [ext_resource type="Script" uid="uid://8oui03p8odja" path="res://scripts/battle/DefaultAction.gd" id="2_mvp1v"]
 [ext_resource type="Script" uid="uid://b4ypsr7jwymcr" path="res://scripts/effects/Effects/DamageEffect.gd" id="3_3xbwp"]
+
+[sub_resource type="Resource" id="Resource_3xbwp"]
+script = ExtResource("1_qkoyr")
+metadata/_custom_type_script = "uid://wmhrexuqbg3"
 
 [sub_resource type="Resource" id="Resource_mvp1v"]
 script = ExtResource("3_3xbwp")
@@ -18,6 +23,7 @@ animation_name = "attack"
 energy_cost = 2
 power = 1
 range = 1
+aoe = SubResource("Resource_3xbwp")
 instant = false
 repeats = 0
 metadata/_custom_type_script = "uid://8oui03p8odja"

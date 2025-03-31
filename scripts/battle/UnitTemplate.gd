@@ -59,9 +59,6 @@ func move_to(target_position: Vector2):
 	var tween = create_tween()
 	tween.tween_property(self, "position", target_position, 0.5) # Smooth move over 0.5 seconds
 
-func _on_area_2d_input_event(viewport, event, shape_idx):
-	if event is InputEventMouseButton and event.pressed and event.button_index == MOUSE_BUTTON_LEFT:
-		emit_signal("unit_selected", self)
 
 func set_grid_position(grid_pos: Vector2i, grid_controller: Node2D):
 	grid_position = grid_pos
